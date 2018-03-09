@@ -44,6 +44,10 @@ a:hover{
     width: 80%;
 }
 
+.catalogo-link{
+    color: black;
+    font-family: 'Alegreya Sans', sans-serif;
+}
 
 /*div.upload input, div.image-upload input {
     position: absolute;

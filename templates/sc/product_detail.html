@@ -10,6 +10,7 @@
 
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/static/css/ocul.css">
 {% end %}
 
 {% block javascript %}
@@ -27,7 +28,11 @@
             'product_id' : {{ product_id }},
             'container' : '.product-detail',
             onLoad: function(product){
-                related(product.bullet_3);
+                if(product.bullet_3 != "" && product.bullet_3 != undefined)
+                {
+                  console.log(product.bullet_3);
+                  $(".bul-3").removeClass("hidden");
+                }
 
                 if (product.bullet_1 != "" ){
                     $.get(site_base + "/article/tag?tag="+product.bullet_1, function(data)
@@ -123,8 +128,9 @@
                             </div>
                              <div class="bul ellipsis multiline"> {{!bullet_1}} </div>
                              <div class="bul-2 ellipsis multiline"> {{!bullet_2}} </div>
-                             <a class="pf" href="">
-                             <div class="bul-3 ellipsis multiline hidden-xs"> {{!bullet_3}} </div></a>
+                             <div class="bul-3 hidden ellipsis multiline hidden-xs">
+                              <a class="catalogo-link" href="{{! bullet_3 }}" target="_blank">Ver Catálogo</a>
+                            </div>
                              <div class="col-md-12 col-sm-12 col-xs-12">
                              <div align="center">
                              <hr class="a-cero">
