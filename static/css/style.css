@@ -33,6 +33,40 @@ a:hover{
     -webkit-box-shadow: 10px 10px 2px 0px transparent;
 }
 
+.text-venta-online{
+    font-family: 'Alegreya SC', serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button-border{
+    border: solid 1px #c1a46d;
+    border-radius: 15px;
+    width: 50%;
+    height: 116px;
+    position: relative;
+    left: 22%;
+}
+
+.button-border-2{
+    border: solid 1px #c1a46d;
+    border-radius: 15px;
+    position: relative;
+    width: 63%;
+}
+
+.boostmap{
+    width: 100%;
+}
+
+.cornershop{
+    width: 100%;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 11px;
+}
+
 .linea-1-img{
     margin-top: 0px;
     margin-bottom: 32px;
@@ -1302,24 +1336,34 @@ hr.ubicacion {
 
 }
 
-@media (max-width: 767px){
-    .back {
-    background-color: #e4dad1;
-    width: 106%;
-    height: 188px;
+@media (max-width: 768px){
+    .button-border{
+        height: 166px;
+        margin-bottom: 20px;
+    }
+    .button-border-2{
+        left: 15%;
+    }
 }
 
-img.img-edit {
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 190px;
-    object-fit: cover !important;
-    max-width: none;
-    margin: 0 auto;
-    text-align: center;
-    top: 0px;
-}
+@media (max-width: 767px){
+    .back {
+        background-color: #e4dad1;
+        width: 106%;
+        height: 188px;
+    }
+
+    img.img-edit {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 190px;
+        object-fit: cover !important;
+        max-width: none;
+        margin: 0 auto;
+        text-align: center;
+        top: 0px;
+    }
 
 
 .box-maison{
@@ -1471,10 +1515,14 @@ hr.contact {
 
 
 @media (max-width: 414px){
-/*    .navbar-brand {
-    width: 60% !important;
+.cornershop{
+    left: -64px;
+    position: relative;
+    width: 180%;
 }
-*/
+.button-border {
+    height: 135px;
+}
 
 .banner-moulie3{
     background-size: auto !important;
@@ -1535,6 +1583,14 @@ hr.contact {
 }
 
 @media (max-width: 400px){
+    .cornershop{
+        right: 62px;
+        position: relative;
+        width: 190%;
+    }
+    .button-border {
+        height: 122px;
+    }
 	.bot {
     height: 80px;
 }
@@ -1569,6 +1625,14 @@ hr.contact {
     .logo {
     margin-left: -27px;
     width: 236px;
+}
+
+.cornershop{
+    width: 216%;
+}
+
+.button-border {
+    height: 100px;
 }
 
 

@@ -1,0 +1,73 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+<script type='text/javascript'>
+    $("#testButton").live("touchstart", function() {
+      $(this).addClass("active");
+    }).live("touchend", function() {
+      $(this).removeClass("active");
+    });
+</script>
+
+
+<script type="text/javascript">
+window.sr = ScrollReveal();
+sr.reveal('.block--content');
+sr.reveal('.block--content-dos');
+</script>
+
+
+{% end %}
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+
+<!-- *contenido* -->
+
+<section>
+  <div class="container">
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="text-venta-online {{editabletext}}" text-id="{{ site.name + '_text_rar_venta' }}"> {{ read_text(site.name +  '_text_rar_venta') }}</div>
+    </div>
+
+    <div class="clearfix" style="padding-bottom: 50px"></div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <a href="https://web.cornershopapp.com/store/52/featured" target="_blank">
+        <div class="col-md-6 col-xs-12">
+          <div class="button-border">
+            <img class="cornershop" src="https://cdn.loadingplay.com/static/images/3c379fdbd5905d5363cbbd7c5ffe23ad__.png">
+          </div>
+        </div>
+      </a>
+      <a href="http://www.boosmap.com/comercio/moulie" target="_blank">
+        <div class="col-md-6 col-xs-12">
+          <div class="button-border-2">
+            <img class="boostmap" src="https://cdn.loadingplay.com/static/images/8a6601a7001f7d3ff428e3abf66e4a87_LogoNegroboosmap.png">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="clearfix" style="padding-bottom: 100px"></div>
+  </div>
+</section>
+{% include '../home/footer.html' %}
+{% end %}
+
+
