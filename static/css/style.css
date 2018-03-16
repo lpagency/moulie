@@ -46,7 +46,7 @@ a:hover{
     width: 50%;
     height: 116px;
     position: relative;
-    left: 22%;
+    left: 39.5%;
 }
 
 .button-border-2{
@@ -54,6 +54,7 @@ a:hover{
     border-radius: 15px;
     position: relative;
     width: 63%;
+    left: 30px;
 }
 
 .boostmap{
