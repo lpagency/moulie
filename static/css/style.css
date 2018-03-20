@@ -1341,6 +1341,7 @@ hr.ubicacion {
     .button-border{
         height: 166px;
         margin-bottom: 20px;
+        left: 144px;
     }
     .button-border-2{
         left: 15%;
@@ -1523,6 +1524,7 @@ hr.contact {
 }
 .button-border {
     height: 135px;
+    left: 70px;
 }
 
 .banner-moulie3{
@@ -1591,6 +1593,7 @@ hr.contact {
     }
     .button-border {
         height: 122px;
+        left: 65px;
     }
 	.bot {
     height: 80px;
@@ -1630,10 +1633,13 @@ hr.contact {
 
 .cornershop{
     width: 216%;
+    padding-right: 67px;
 }
 
 .button-border {
-    height: 100px;
+    height: 82px;
+    margin-left: 19px;
+    width: 45%;
 }
 
 
