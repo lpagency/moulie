@@ -68,8 +68,9 @@ sr.reveal('.block--content-dos');
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+      <div class="item active">
       <a id="{{ site.name + '_img_slider_3' }}" href="{{ read_link(site.name + '_img_slider_3') }}">
-        <div class="item active banner-moulie3" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); height:450px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;"data-img-width="1600" data-img-height="890" data-diff="100">
+        <div class="banner-moulie3" style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); height:450px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;"data-img-width="1600" data-img-height="890" data-diff="100">
             {% if is_admin %}
               <div class="image-upload ge visible-movil">
                  <label for="img_slider_3">
@@ -84,7 +85,7 @@ sr.reveal('.block--content-dos');
       {% if is_admin %}
         <img class="change-image editablelink import" link-id="{{ site.name + '_img_slider_3' }}" content="{{ read_link(site.name + '_img_slider_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
       {% end %}
-
+</div>
 <!-- **otro** -->
         <div class="mov item " style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); height:450px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
              {% if is_admin %}
