@@ -204,8 +204,7 @@ hr.len {
     color: white;
     font-size: 15px;
     font-weight: 400;
-    padding: 0px 63px;
-    /* border: 1px solid black; */
+    padding: 0px 53px;
     margin-left: 2px;
     margin-right: 2px;
     position: relative;
@@ -231,7 +230,7 @@ hr.len {
 a.subcateg:hover {
    /* background-color: rgba(128, 128, 128, 0.38);*/
     font-size: 15px;
-    padding: 0px 63px;
+    padding: 0px 53px;
     color:#C1A979;
     font-weight: 400;
     margin-left: 2px;
@@ -1314,7 +1313,7 @@ a.subcateg:hover {
 }
 
 .tag-mov{
-    height: 86px !important;
+    height: 101px !important;
     margin-bottom: 20px !important;
     background: rgba(238, 232, 170, 0.31);
 }

@@ -84,7 +84,7 @@
     position: absolute;
     top: 91%;
     left: -6px;
-    z-index: 1000;
+    z-index: 10000;
     display: none;
     float: left;
     min-width: 131px;
@@ -102,7 +102,7 @@
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.26);
      -moz-box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.26); 
      box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.26);
-    height: 176px;
+    height: 200px;
 }
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
