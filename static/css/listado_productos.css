@@ -205,8 +205,8 @@ hr.len {
     font-size: 15px;
     font-weight: 400;
     padding: 0px 53px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
     position: relative;
     top: 9px;
     font-family: 'Alegreya SC', serif;
@@ -216,11 +216,11 @@ hr.len {
 .subcateg:hover {
    /* background-color: rgba(128, 128, 128, 0.38);*/
     font-size: 15px;
-    padding: 0px 63px;
+    padding: 0px 53px;
     color:#C1A979;
     font-weight: 400;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
     position: relative;
     top: 9px;
     font-family: 'Alegreya SC', serif;
@@ -233,8 +233,8 @@ a.subcateg:hover {
     padding: 0px 53px;
     color:#C1A979;
     font-weight: 400;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
     position: relative;
     top: 9px;
     font-family: 'Alegreya SC', serif;
