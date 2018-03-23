@@ -106,7 +106,7 @@ $(document).ready(function() {
 
 
     <section id="cont">
-        <div class="container">
+        <div class="container productos-container">
             <!-- todas -->
             <div id="img-todas" class="col-md-6 hidden img-tag hidden-xs">
                 <div style="position:relative;">
@@ -253,13 +253,13 @@ $(document).ready(function() {
                 <div style="position:relative;">
                     {% if is_admin %}
                     <div class="image-upload">
-                        <label for="img_box_dif_6">
+                        <label for="img_box_dif_6_pascua">
                             <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                         </label>
-                        <input type="file" class="editableimage" image-id="{{ site.name }}_box_dif_6" name="image" id="img_box_dif_6">
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_box_dif_6_pascua" name="image" id="img_box_dif_6_pascua">
                     </div>
                     {% end %}
-                    <img id="{{ site.name }}_box_dif_6" src="{{ read_image(site.name + '_box_dif_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_dif_6') }}'" class="box-producto-static" alt="item">
+                    <img id="{{ site.name }}_box_dif_6_pascua" src="{{ read_image(site.name + '_box_dif_6_pascua', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_dif_6_pascua') }}'" class="box-producto-static" alt="item">
                 </div>
             </div>
 

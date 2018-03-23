@@ -25,6 +25,9 @@ a:hover{
     text-decoration: none;
 }
 
+.productos-container{
+    min-height: 335px;
+}
 
 .form-control:focus {
     border-color: #060606;
@@ -998,6 +1001,10 @@ input[type=file] {
 @media (max-width: 1199px){
     .logo.mob{
   width: 150px !important;
+}
+
+.productos-container{
+    min-height: inherit;
 }
 
 .texto-ubi-2 {
