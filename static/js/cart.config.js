@@ -99,6 +99,10 @@ $(document).ready(function()
         'onLoad': function(products) 
         {
             $(".product-list-loading").hide();
+            if(products == "")
+            {
+                $(".products").css("margin-top", "68px");
+            }
         }
     };
 
