@@ -76,7 +76,6 @@ $(document).ready(function() {
         <div class="container col-md-12 col-sm-12 col-xs-12 mtl text-center" style="padding-top: 1em;">
             <div align="center">
                 <div style="background: #7184A4; width:90%; height: 40px; font-family: 'Alegreya SC', serif;" class="tag-mov">
-                    <a href="#" id="pascua" class="subcateg mbtm5" tag="pascua" role="button">PASCUA </a>
                     <a href="#" id="chocolates" class="subcateg mbtm5" tag="chocolates" role="button">CHOCOLATES </a>
                     <a href="#" id="macarons" class="subcateg mbtm5" tag="macarons" role="button">MACARONS</a>
                     <a href="#" id="delicias" class="subcateg mbtm5" tag="delicias" role="button">DELICIAS</a>
@@ -244,21 +243,6 @@ $(document).ready(function() {
                     </div>
                     {% end %}
                     <img id="{{ site.name }}_box_dif_5" src="{{ read_image(site.name + '_box_dif_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_dif_5') }}'" class="box-producto-static" alt="item">
-                </div>
-            </div>
-
-            <!-- pascua -->
-            <div id="img-pascua" class="col-md-6 hidden img-tag hidden-xs">
-                <div style="position:relative;">
-                    {% if is_admin %}
-                    <div class="image-upload">
-                        <label for="img_box_dif_6">
-                            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-                        </label>
-                        <input type="file" class="editableimage" image-id="{{ site.name }}_box_dif_6" name="image" id="img_box_dif_6">
-                    </div>
-                    {% end %}
-                    <img id="{{ site.name }}_box_dif_6" src="{{ read_image(site.name + '_box_dif_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_dif_6') }}'" class="box-producto-static" alt="item">
                 </div>
             </div>
 
