@@ -216,7 +216,6 @@ hr.len {
 .subcateg:hover {
    /* background-color: rgba(128, 128, 128, 0.38);*/
     font-size: 15px;
-    padding: 0px 53px;
     color:#C1A979;
     font-weight: 400;
     margin-left: 0px;
@@ -230,7 +229,6 @@ hr.len {
 a.subcateg:hover {
    /* background-color: rgba(128, 128, 128, 0.38);*/
     font-size: 15px;
-    padding: 0px 53px;
     color:#C1A979;
     font-weight: 400;
     margin-left: 0px;
