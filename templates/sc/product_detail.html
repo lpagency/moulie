@@ -10,11 +10,11 @@
 
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/static/css/ocul.css">
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/ocul.css">
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/product_detail.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/product_detail.js"></script>
 
 <script type="text/javascript">
 
@@ -57,7 +57,7 @@
                          // $('.ellipsis').ellipsis();
                          $(".ellipsis").dotdotdot();
                      }
-                
+
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -70,7 +70,7 @@
     <section class="h_submenu hidden-xs" id="cont">
           <div class="container-fluid col-md-12 col-sm-12 col-xs-12 mtl text-center" style="padding-top: 1em;">
         <div align="center">
-           <div style="background: #7184A4; width:88%; height: 40px;" class="tag-mov"> 
+           <div style="background: #7184A4; width:88%; height: 40px;" class="tag-mov">
             <a href="{{ site_base }}/productos?tag=chocolates" id="chocolates" class="subcateg mbtm5" tag="chocolates" role="button">CHOCOLATES </a>
             <a href="{{ site_base }}/productos?tag=macarons" id="macarons" class="subcateg mbtm5" tag="macarons" role="button">MACARONS</a>
             <a href="{{ site_base }}/productos?tag=delicias" id="delicias" class="subcateg mbtm5" tag="delicias" role="button">DELICIAS</a>
@@ -100,17 +100,17 @@
                     <div class="col-xs-12 col-md-12 col-sm-6 image_little">
                        <img class="{{! images[0]['thumb_500']|hide_if_empty}} col-xs-3 little img_prod_little" src="{{! images[0]['thumb_500'] }}" onload="this.onload='';this.src={{! images[0]['thumb_500']}}" />
 
-                      <img class="{{! images[1]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[1]['thumb_500'] }}"  title="" alt="" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" /> 
+                      <img class="{{! images[1]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[1]['thumb_500'] }}"  title="" alt="" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
 
                        <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[2]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" /
 
-                    <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" /> 
+                    <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
 
-                     <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" /> 
-                    
-                     <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" /> 
- 
-                     <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" /> 
+                     <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
+
+                     <img class="{{! images[5]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[5]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
+
+                     <img class="{{! images[6]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[6]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[6]['thumb_500']}}" />
                     </div>
 
                     </div>
@@ -139,7 +139,7 @@
                               <hr class="a-cero">
                               </div>
                               </div>
-                              <div class="descr_prod_detail ellipsis multiline"> 
+                              <div class="descr_prod_detail ellipsis multiline">
                                {{! description }} </div>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
 </script>
 
 
-<!-- 
+<!--
 {% end %} -->
 
 
@@ -162,7 +162,7 @@
 
 
 <div class="container-fluid">
-    
+
     <div class="container  product-page"></div>
 
     </div>

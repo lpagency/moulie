@@ -18,8 +18,8 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu_vsJCnXUME0AMSUL69qXhB72ztOdw78&callback=initMap"
 
   type="text/javascript"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/map_store.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/frubik.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/map_store.js"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -112,7 +112,7 @@
        <img id="{{ site.name }}_box_lascondes" src="{{ read_image(site.name + '_box_lascondes', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_lascondes') }}'" class="box-locales" alt="item">
     </a>
         {% if is_admin %}
-          <img class="change-image editablelink loc" link-id="{{ site.name + '_box_lascondes' }}" content="{{ read_link(site.name + '_box_lascondes') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+          <img class="change-image editablelink loc" link-id="{{ site.name + '_box_lascondes' }}" content="{{ read_link(site.name + '_box_lascondes') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
         {% end %}
       </div>
 

@@ -26,7 +26,7 @@
                 var asunto = $("#itComentario").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -72,12 +72,12 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
 </script>
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.con').addClass("active");
@@ -88,7 +88,7 @@
 
 
 {% block css %}
-<link type="text/css" rel='stylesheet' href="{{ site_base }}/static/css/page.edit.css" />
+<link type="text/css" rel='stylesheet' href="{{ site_base }}/{{ nocache_static }}/css/page.edit.css" />
 <style type="text/css">
     .controls input, .controls textarea
     {
@@ -119,7 +119,7 @@
     </div>
     {% end %}
     <img id="{{ site.name }}_banner_contact-loading" src="{{ read_image(site.name + '_banner_contact-loading', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_contact-loading',500) }}'" class="desaturada fondo-form" alt="item">
-  
+
     <div class="container">
         <div align="center">
             <div class="description distrib contact {{editabletext}}" text-id="{{ site.name + '_ti_con' }}" style="text-align: left"> {{ read_text(site.name +  '_ti_con') }}</div>
@@ -140,7 +140,7 @@
                 {% else %}
                 <h3 class="description distrib contact" style="text-align:center;"> {{ read_text(site.name + '_texto-contact1') }} </h3>
                 {% end %} -->
-	            <!-- <p class="description descrip-Form" style="text-align:center;font-style:italic" > 
+	            <!-- <p class="description descrip-Form" style="text-align:center;font-style:italic" >
 	            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -150,7 +150,7 @@
                 {% else %}
                 <p class="description descrip-Form contact" style="text-align:center;font-style:italic"> {{ read_text(site.name + '_texto-descrip1') }} </p>
                 {% end %} -->
-	           
+
 	            <!-- <div class="">Descargar Brochure</div> -->
 	            <!-- <button type="button" class="btn btn-default btn-lg disabled download center-block" style="text-align:center;">Descargar Brochure</button> -->
        		</div>
@@ -181,9 +181,9 @@
                     </div>
                 </div>
             </div> -->
-            
+
             <div class="container-fluid contact product text-left container-fluid-magle fondo-contact" style="display: inherit;">
-                <div class="row">       
+                <div class="row">
                     <!-- <div class="col-xs-12 col-sm-4">
                         <address>
                             <br>
@@ -262,7 +262,7 @@
                                       </div>
                                       <span id="helpBlock2" class="hidden help-block help-fono">escribe tu teléfono</span>
                                      </div>
-                             
+
                                     <div class="form-group form-moulie">
                                         <label class="control-label"></label>
                                         <div class=" controls">
@@ -273,10 +273,10 @@
                                     </div>
 
                                   <!--   </div> -->
-                                  
-                                   </div>  
 
-                            <!-- </div> -->  
+                                   </div>
+
+                            <!-- </div> -->
                             <div class="col-sm-6 form-moulie">
                             <div class="form-group form-moulie">
                                 <label class="control-label"></label>
@@ -299,17 +299,17 @@
                                 <a class="ber bor" href="tel:56922192976">
                                 <div class="ber bor {{editabletext}}" text-id="{{ site.name + '_m_m' }}"> {{ read_text(site.name +  '_m_m') }} </div> </a>
                             </div>
-                        </form> 
+                        </form>
                         </div>
 
-                    </div>      
-                
+                    </div>
+
                   </div>
-                </div>  
+                </div>
             </div>
-            
-			
+
+
 
 	</div>
-{% include '../home/footer.html' %}		
+{% include '../home/footer.html' %}
 {% end %}

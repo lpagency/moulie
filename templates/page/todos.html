@@ -10,7 +10,7 @@
 
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/cart.config.js"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -35,7 +35,7 @@
 <script type="text/javascript">
     $(document).ready(function()
     {
-    //   
+    //
     $(document).on("click", ".subcateg", function(ev){
         // ev.preventDefault();
 
@@ -46,7 +46,7 @@
     });
 </script>
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.productos').addClass("active");
@@ -90,7 +90,7 @@
   <section class="h_submenu">
           <div class="container-fluid col-md-12 col-sm-12 col-xs-12 mtl text-center" style="padding-top: 1em;">
         <div align="center">
-           <div style="background: #7184A4; width:88%; height: 40px;" class="tag-mov"> 
+           <div style="background: #7184A4; width:88%; height: 40px;" class="tag-mov">
             <a href="#" id="chocolates" class="subcateg mbtm5" tag="chocolates" role="button">CHOCOLATES </a>
             <a href="#" id="macarons" class="subcateg mbtm5" tag="macarons" role="button">MACARONS</a>
             <a href="#" id="delicias" class="subcateg mbtm5" tag="delicias" role="button">DELICIAS</a>
