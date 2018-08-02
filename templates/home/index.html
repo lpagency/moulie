@@ -9,7 +9,7 @@
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/dermatologia.js"></script>
 <script type='text/javascript'>
     $("#testButton").live("touchstart", function() {
       $(this).addClass("active");
@@ -57,9 +57,9 @@ sr.reveal('.block--content-dos');
                    <a href="#first-page-scroll" class="anchorLink">
                        <div class="contenedor-circulo">
                            <div  class="circulo-bajada" >
-                              <i class="fa  fa-angle-down"  aria-hidden="true"></i> 
+                              <i class="fa  fa-angle-down"  aria-hidden="true"></i>
                            </div>
-                       
+
                        </div>
                     </a>
                    </div>
@@ -76,7 +76,7 @@ sr.reveal('.block--content-dos');
                  </label>
                  <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_1" name="image" id="img_slider_1" >
              </div>
-                   
+
              {% end %}
         </div>
 </div>
@@ -89,7 +89,7 @@ sr.reveal('.block--content-dos');
                </label>
                <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_2" name="image" id="img_slider_2" >
            </div>
-          
+
            {% end %}
       </div>
     <!-- Left and right controls -->
@@ -116,14 +116,14 @@ sr.reveal('.block--content-dos');
                    <a href="#first-page-scroll" class="anchorLink">
                        <div class="contenedor-circulo">
                            <div  class="circulo-bajada" >
-                              <i class="fa  fa-angle-down"  aria-hidden="true"></i> 
+                              <i class="fa  fa-angle-down"  aria-hidden="true"></i>
                            </div>
-                       
+
                        </div>
                     </a>
                    </div>
           </div>
-          
+
     <!--      <div class="col-md-12">
            <div align="center">
             <a class="header_show_content js-header_show_content" href="" role="presentation"><span class="icon icon-arrow-m-down-white icon-circle"></span><span class="is-visuallyhidden">Inhalt anzeigen</span></a>
@@ -142,11 +142,11 @@ sr.reveal('.block--content-dos');
                </label>
                <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_1" name="image" id="img_slider_1" >
            </div>
-                 
+
            {% end %}
-    
+
        <!--  <img class="img_banner" id="{{ site.name }}_img_slider_1" src="{{ read_image(site.name + '_img_slider_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_slider_1',500) }}'" alt="item" style=" "> -->
-<!--         <img src="{{ read_image(site.name + '_slide1', 500) }}" alt="Slider 1" longdesc="{{ read_image(site.name + '_slide1', 500) }}" /> -->     
+<!--         <img src="{{ read_image(site.name + '_slide1', 500) }}" alt="Slider 1" longdesc="{{ read_image(site.name + '_slide1', 500) }}" /> -->
       </div>
     </div>
 
@@ -160,7 +160,7 @@ sr.reveal('.block--content-dos');
                </label>
                <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_2" name="image" id="img_slider_2" >
            </div>
-          
+
            {% end %}
       </div>
 
@@ -201,9 +201,9 @@ sr.reveal('.block--content-dos');
              {% end %}
 
              <img id="{{ site.name }}_box_rar_uno" src="{{ read_image(site.name + '_box_rar_uno', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_rar_uno', 500) }}'" class="box-home-one" alt="item">
-             
+
              {% if is_admin %}
-             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_uno' }}" content="{{ read_link(site.name + '_box_rar_uno') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_uno' }}" content="{{ read_link(site.name + '_box_rar_uno') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
              {% end %}
            </div>
          </div>
@@ -235,7 +235,7 @@ sr.reveal('.block--content-dos');
              <img id="{{ site.name }}_box_rar_dos" src="{{ read_image(site.name + '_box_rar_dos', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_rar_dos', 500) }}'" class="box-home-one" alt="item">
 
             {% if is_admin %}
-             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_dos' }}" content="{{ read_link(site.name + '_box_rar_dos') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_dos' }}" content="{{ read_link(site.name + '_box_rar_dos') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
              {% end %}
 
            </div>
@@ -267,9 +267,9 @@ sr.reveal('.block--content-dos');
          </div>
          {% end %}
          <img id="{{ site.name }}_box_rar_tres" src="{{ read_image(site.name + '_box_rar_tres', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_rar_tres', 500) }}'" class="box-home-two" alt="item">
-        
+
         {% if is_admin %}
-             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_tres' }}" content="{{ read_link(site.name + '_box_rar_tres') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+             <img class="change-image editablelink import" link-id="{{ site.name + '_box_rar_tres' }}" content="{{ read_link(site.name + '_box_rar_tres') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
         {% end %}
 
        </div>
@@ -303,8 +303,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6  space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_1' }}" href="{{ read_link(site.name + '_box_chi_1') }}">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_1' }}" href="{{ read_link(site.name + '_box_chi_1') }}">
              <div class="abs_txt">
               <div class="text-box text-center  {{editabletext}}" text-id="{{ site.name + '_t_box' }}"> {{ read_text(site.name +  '_t_box') }}</div>
             </div>
@@ -323,7 +323,7 @@ sr.reveal('.block--content-dos');
    {% end %}
 
   {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_1' }}" content="{{ read_link(site.name + '_box_chi_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_1' }}" content="{{ read_link(site.name + '_box_chi_1') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
   {% end %}
 <a id="{{ site.name + '_box_chi_1' }}" href="{{ read_link(site.name + '_box_chi_1') }}">
    <img id="{{ site.name }}_box_chi_1" src="{{ read_image(site.name + '_box_chi_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_1') }}'" class="img-edit" alt="item">
@@ -337,8 +337,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6  space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">
              <div class="img-text-center abs_txt">
               <div class="text-box text-center {{editabletext}}" text-id="{{ site.name + '_choc' }}"> {{ read_text(site.name +  '_choc') }}</div>
             </div>
@@ -354,11 +354,11 @@ sr.reveal('.block--content-dos');
      <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_2" name="image" id="img_box_chi_2" >
    </div>
    {% end %}
-   
+
     {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_2' }}" content="{{ read_link(site.name + '_box_chi_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-    {% end %} 
-  <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">  
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_2' }}" content="{{ read_link(site.name + '_box_chi_2') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
+    {% end %}
+  <a id="{{ site.name + '_box_chi_2' }}" href="{{ read_link(site.name + '_box_chi_2') }}">
    <img id="{{ site.name }}_box_chi_2" src="{{ read_image(site.name + '_box_chi_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_2') }}'" class="img-edit" alt="item">
  </div>
 </div>
@@ -369,8 +369,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6 space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_3' }}" href="{{ read_link(site.name + '_box_chi_3') }}">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_3' }}" href="{{ read_link(site.name + '_box_chi_3') }}">
              <div class="img-text-center abs_txt">
               <div class="text-box text-center {{editabletext}}" text-id="{{ site.name + '_t_box_3' }}"> {{ read_text(site.name +  '_t_box_3') }}</div>
             </div>
@@ -386,12 +386,12 @@ sr.reveal('.block--content-dos');
      <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_3" name="image" id="img_box_chi_3" >
    </div>
    {% end %}
-   
+
      {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_3' }}" content="{{ read_link(site.name + '_box_chi_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_3' }}" content="{{ read_link(site.name + '_box_chi_3') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
     {% end %}
 
-  <a id="{{ site.name + '_box_chi_3' }}" href="{{ read_link(site.name + '_box_chi_3') }}"">  
+  <a id="{{ site.name + '_box_chi_3' }}" href="{{ read_link(site.name + '_box_chi_3') }}"">
    <img id="{{ site.name }}_box_chi_3" src="{{ read_image(site.name + '_box_chi_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_3') }}'" class="img-edit" alt="item">
  </div>
 </div>
@@ -404,8 +404,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6  space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_4' }}" href="{{ read_link(site.name + '_box_chi_4') }}"">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_4' }}" href="{{ read_link(site.name + '_box_chi_4') }}"">
              <div class="img-text-center abs_txt">
               <div class="text-box text-center {{editabletext}}" text-id="{{ site.name + '_t_box_4' }}"> {{ read_text(site.name +  '_t_box_4') }}</div>
             </div>
@@ -424,10 +424,10 @@ sr.reveal('.block--content-dos');
    {% end %}
 
   {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_4' }}" content="{{ read_link(site.name + '_box_chi_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_4' }}" content="{{ read_link(site.name + '_box_chi_4') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
   {% end %}
-   
-  <a id="{{ site.name + '_box_chi_4' }}" href="{{ read_link(site.name + '_box_chi_4') }}">   
+
+  <a id="{{ site.name + '_box_chi_4' }}" href="{{ read_link(site.name + '_box_chi_4') }}">
    <img id="{{ site.name }}_box_chi_4" src="{{ read_image(site.name + '_box_chi_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_4') }}'" class="img-edit" alt="item">
  </div>
 </div>
@@ -440,8 +440,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6 space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_5' }}" href="{{ read_link(site.name + '_box_chi_5') }}">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_5' }}" href="{{ read_link(site.name + '_box_chi_5') }}">
              <div class="img-text-center abs_txt">
               <div class="text-box text-center {{editabletext}}" text-id="{{ site.name + '_t_box_5' }}"> {{ read_text(site.name +  '_t_box_5') }}</div>
             </div>
@@ -457,12 +457,12 @@ sr.reveal('.block--content-dos');
      <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_5" name="image" id="img_box_chi_5" >
    </div>
    {% end %}
-   
+
    {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_5' }}" content="{{ read_link(site.name + '_box_chi_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_5' }}" content="{{ read_link(site.name + '_box_chi_5') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
     {% end %}
 
-<a id="{{ site.name + '_box_chi_5' }}" href="{{ read_link(site.name + '_box_chi_5') }}">  
+<a id="{{ site.name + '_box_chi_5' }}" href="{{ read_link(site.name + '_box_chi_5') }}">
    <img id="{{ site.name }}_box_chi_5" src="{{ read_image(site.name + '_box_chi_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_5') }}'" class="img-edit" alt="item">
  </div>
 </div>
@@ -474,8 +474,8 @@ sr.reveal('.block--content-dos');
    <div class="col-md-2 col-sm-4 col-xs-6  space20 img-cat sobre-botones article-box-2">
     <div class="back">
     <div class="box-product" onclick="">
-          <div class="box-product-info" onclick="">   
-            <a id="{{ site.name + '_box_chi_6' }}" href="{{ read_link(site.name + '_box_chi_6') }}">  
+          <div class="box-product-info" onclick="">
+            <a id="{{ site.name + '_box_chi_6' }}" href="{{ read_link(site.name + '_box_chi_6') }}">
              <div class="img-text-center abs_txt">
               <div class="text-box text-center {{editabletext}}" text-id="{{ site.name + '_t_box_6' }}"> {{ read_text(site.name +  '_t_box_6') }}</div>
             </div>
@@ -491,12 +491,12 @@ sr.reveal('.block--content-dos');
      <input type="file" class="editableimage" image-id="{{ site.name }}_box_chi_6" name="image" id="img_box_chi_6" >
    </div>
    {% end %}
-   
+
    {% if is_admin %}
-       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_6' }}" content="{{ read_link(site.name + '_box_chi_6') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+       <img class="change-image editablelink or" link-id="{{ site.name + '_box_chi_6' }}" content="{{ read_link(site.name + '_box_chi_6') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
     {% end %}
 
-  <a id="{{ site.name + '_box_chi_6' }}" href="{{ read_link(site.name + '_box_chi_6') }}">   
+  <a id="{{ site.name + '_box_chi_6' }}" href="{{ read_link(site.name + '_box_chi_6') }}">
    <img id="{{ site.name }}_box_chi_6" src="{{ read_image(site.name + '_box_chi_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_chi_6') }}'" class="img-edit" alt="item">
  </div>
 </div>

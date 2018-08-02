@@ -1,20 +1,20 @@
-{% extends "../base.html" %} 
+{% extends "../base.html" %}
 
-{% block title %} {{ site.name }} {% end %} 
-{% block header %} {% include '../home/header.html' %} {% end %} 
+{% block title %} {{ site.name }} {% end %}
+{% block header %} {% include '../home/header.html' %} {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/cart.config.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/frubik.js"></script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
     $("#OpenAlert").click();
 });
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
-    $(document).on("click", ".subcateg", function(ev) 
+    $(document).on("click", ".subcateg", function(ev)
     {
         $(".subcateg").removeClass('active');
         $(this).addClass('active');
@@ -23,9 +23,9 @@ $(document).ready(function() {
 });
 </script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
-    $(document).on("click", ".subcategchocolates", function(ev) 
+    $(document).on("click", ".subcategchocolates", function(ev)
     {
         $(".subcategchocolates").removeClass('active');
         $(this).addClass('active');
@@ -34,7 +34,7 @@ $(document).ready(function()
 });
 </script>
 <script type="text/javascript">
-$("#testButton").live("touchstart", function() 
+$("#testButton").live("touchstart", function()
 {
     $(this).addClass("active");
 }).live("touchend", function() {
@@ -50,7 +50,7 @@ $(document).ready(function() {
 </script>
 {% end %}
 
-{% block body %} 
+{% block body %}
 
 {% if is_admin %} {% set editabletext = 'editabletext' %} {% else %} {% set editabletext = '' %} {% end %}
 <!-- *contenido* -->
@@ -255,5 +255,5 @@ $(document).ready(function() {
         <div class="clearfix-dos"> </div>
     </section>
 </body>
-{% include '../home/footer.html' %} 
+{% include '../home/footer.html' %}
 {% end %}
