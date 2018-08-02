@@ -28,7 +28,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(38,38,38);
+        var app_public = $.environmentVar('moulie3','moulie3','moulie3');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -50,7 +50,7 @@
     });
 </script>
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.mundo').addClass("active");
@@ -89,7 +89,7 @@
     </div>
     </div>
   </div>
- 
+
 </section>
 
 
@@ -109,10 +109,10 @@
 {% set selected = random.choice([0,1,2]) %}
   -->
 
-<section > 
+<section >
    <div class="container">
- <!--    <video 
-        src="{{ videos[selected] }}" 
+ <!--    <video
+        src="{{ videos[selected] }}"
         poster="{{ poster[selected] }}" width="100%" height="auto" class="fondo" controls autoplay="autoplay" loop="loop" >
     </video>
     <div class="video-overlay" ></div> -->
@@ -123,7 +123,7 @@
           id="video1"
           class="banner-one"
           src="https://player.vimeo.com/external/183713295.sd.mp4?s=67842a0115831973924eed34fe992cb35b973077&profile_id=164&oauth2_token_id=916835808"
-          poster="https://i.vimeocdn.com/video/593003698_640x360.jpg?r=pad" width="100%" height="auto" muted autoplay="autoplay" loop="loop" >         
+          poster="https://i.vimeocdn.com/video/593003698_640x360.jpg?r=pad" width="100%" height="auto" muted autoplay="autoplay" loop="loop" >
         </video> -->
 
          {% if is_admin %}
@@ -146,7 +146,7 @@
 <!-- **fin video*** -->
 
 <section id="cont">
-  <div class="container"> 
+  <div class="container">
     <div class="col-md-8 col-sm-8 col-xs-12">
       <div align="center">
       <div class="texto-arte {{editabletext}}" text-id="{{ site.name + '_arte' }}"> {{ read_text(site.name +  '_arte') }} </div>

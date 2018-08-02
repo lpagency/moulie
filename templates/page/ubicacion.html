@@ -33,7 +33,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(38,38,38);
+        var app_public = $.environmentVar('moulie3','moulie3','moulie3');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -56,7 +56,7 @@
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.ubicacion').addClass("active");
@@ -84,7 +84,7 @@
 
 <!-- **locales** -->
 
-<section id="cont"> 
+<section id="cont">
  <div class="container">
    <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="texto-locales {{editabletext}}" text-id="{{ site.name + '_loc' }}"> {{ read_text(site.name +  '_loc') }}</div>
@@ -106,13 +106,13 @@
        <img id="{{ site.name }}_box_ubicacion_1" src="{{ read_image(site.name + '_box_ubicacion_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_ubicacion_1') }}'" class="box-ubicacion" alt="item">
        </a>
      </div>
-     
+
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_1' }}"> {{ read_text(site.name +  '_loc_1') }}</div>
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_1_1' }}"> {{ read_text(site.name +  '_loc_1_1') }}</div>
-      <hr class="textos"> 
+      <hr class="textos">
 
     </div>
-    
+
      <div class="col-md-4">
      <div style="position:relative;">
         {% if is_admin %}
@@ -131,7 +131,7 @@
 
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_2' }}"> {{ read_text(site.name +  '_loc_2') }}</div>
        <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_2_2' }}"> {{ read_text(site.name +  '_loc_2_2') }}</div>
-        <hr class="textos"> 
+        <hr class="textos">
     </div>
 
      <div class="col-md-4">
@@ -144,7 +144,7 @@
          <input type="file" class="editableimage" image-id="{{ site.name }}_box_ubicacion_3" name="image" id="img_box_ubicacion_3" >
        </div>
        {% end %}
-      
+
       <a href="{{ site_base }}/local_parque_arauco">
        <img id="{{ site.name }}_box_ubicacion_3" src="{{ read_image(site.name + '_box_ubicacion_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_ubicacion_3') }}'" class="box-ubicacion" alt="item">
        </a>
@@ -152,7 +152,7 @@
 
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_3' }}"> {{ read_text(site.name +  '_loc_3') }}</div>
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_3_3' }}"> {{ read_text(site.name +  '_loc_3_3') }}</div>
-       <hr class="textos"> 
+       <hr class="textos">
 
     </div>
 
@@ -166,7 +166,7 @@
          <input type="file" class="editableimage" image-id="{{ site.name }}_box_ubicacion_4" name="image" id="img_box_ubicacion_4" >
        </div>
        {% end %}
-      
+
       <a href="{{ site_base }}/local_portal_la_dehesa">
        <img id="{{ site.name }}_box_ubicacion_4" src="{{ read_image(site.name + '_box_ubicacion_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_ubicacion_4') }}'" class="box-ubicacion" alt="item">
        </a>
@@ -174,7 +174,7 @@
 
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_4' }}"> {{ read_text(site.name +  '_loc_4') }}</div>
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_4_4' }}"> {{ read_text(site.name +  '_loc_4_4') }}</div>
-       <hr class="textos"> 
+       <hr class="textos">
 
     </div>
 
@@ -188,7 +188,7 @@
          <input type="file" class="editableimage" image-id="{{ site.name }}_box_ubicacion_5" name="image" id="img_box_ubicacion_5" >
        </div>
        {% end %}
-      
+
       <a href="{{ site_base }}/local_alto_las_condes">
        <img id="{{ site.name }}_box_ubicacion_5" src="{{ read_image(site.name + '_box_ubicacion_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_ubicacion_5') }}'" class="box-ubicacion" alt="item">
        </a>
@@ -196,7 +196,7 @@
 
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_5' }}"> {{ read_text(site.name +  '_loc_5') }}</div>
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_5_5' }}"> {{ read_text(site.name +  '_loc_5_5') }}</div>
-       <hr class="textos"> 
+       <hr class="textos">
 
     </div>
 
@@ -210,7 +210,7 @@
          <input type="file" class="editableimage" image-id="{{ site.name }}_box_ubicacion_6" name="image" id="img_box_ubicacion_6" >
        </div>
        {% end %}
-      
+
       <a href="{{ site_base }}/local_costanera_center">
        <img id="{{ site.name }}_box_ubicacion_6" src="{{ read_image(site.name + '_box_ubicacion_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_ubicacion_6') }}'" class="box-ubicacion" alt="item">
        </a>
@@ -218,7 +218,7 @@
 
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_6' }}"> {{ read_text(site.name +  '_loc_6') }}</div>
       <div class="texto-ubi {{editabletext}}" text-id="{{ site.name + '_loc_6_6' }}"> {{ read_text(site.name +  '_loc_6_6') }}</div>
-       <hr class="textos"> 
+       <hr class="textos">
 
     </div>
 </div>

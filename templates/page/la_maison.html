@@ -28,7 +28,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(38,38,38);
+        var app_public = $.environmentVar('moulie3','moulie3','moulie3');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -50,7 +50,7 @@
     });
 </script>
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.mundo').addClass("active");
@@ -97,7 +97,7 @@
 <section id="cont">
   <div class="container">
     <div align="center">
-     <div class="col-md-12"> 
+     <div class="col-md-12">
       <div style="position:relative;">
         {% if is_admin %}
         <div class="image-upload">
@@ -110,7 +110,7 @@
 
        <img id="{{ site.name }}_box_maison" src="{{ read_image(site.name + '_box_maison', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_maison') }}'" class="box-maison" alt="item">
      </div>
-   </div> 
+   </div>
  </div>
 </div>
 

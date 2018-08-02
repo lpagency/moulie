@@ -13,7 +13,7 @@
 {% end %}
 
 {% block javascript %}
- <script async defer 
+ <script async defer
 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmqVz9hXx_fphCpMRhsCGrpZLMrncDm1A&callback=initMap"
 
@@ -34,7 +34,7 @@
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com/',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(38,38,38);
+        var app_public = $.environmentVar('moulie3','moulie3','moulie3');
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -56,7 +56,7 @@
     });
 </script>
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.ubicacion').addClass("active");
@@ -107,10 +107,10 @@
          <input type="file" class="editableimage" image-id="{{ site.name }}_box_costanera_center" name="image" id="img_box_costanera_center" >
        </div>
        {% end %}
-   
+
    <a id="{{ site.name + '_box_costanera_center' }}" href="{{ read_link(site.name + '_box_costanera_center') }}" target="_blank">
        <img id="{{ site.name }}_box_costanera_center" src="{{ read_image(site.name + '_box_costanera_center', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_costanera_center') }}'" class="box-locales" alt="item">
-    </a>    
+    </a>
         {% if is_admin %}
           <img class="change-image editablelink loc" link-id="{{ site.name + '_box_costanera_center' }}" content="{{ read_link(site.name + '_box_costanera_center') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
         {% end %}

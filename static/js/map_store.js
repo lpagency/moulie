@@ -8,7 +8,7 @@ var checkout_url = $.environmentVar(
      'https://pay.loadingplay.com',
      'https://pay.loadingplay.com',
      'https://pay.loadingplay.com');
-var app_public = $.environmentVar(38,38,38);
+var app_public = $.environmentVar('moulie3','moulie3','moulie3');
 
 var initMap = function(){
     $.ajax({
@@ -31,8 +31,8 @@ var initMap = function(){
         });
 
         google.maps.event.addListener(
-            marker, 
-            'click', 
+            marker,
+            'click',
             function()
             {
                 if(!popup)
@@ -79,7 +79,7 @@ var storesLoaded = function(stores)
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    
+
     // init map
     var map = new google.maps.Map(document.getElementById('map'), options);
     console.log(stores);
