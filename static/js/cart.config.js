@@ -39,7 +39,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.split(search).join(replacement);
 };
 
-$(document).ready(function() 
+$(document).ready(function()
 {
     var params = getIncludeParameters();
     var tag = '';
@@ -78,25 +78,25 @@ $(document).ready(function()
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/'
     );
-    
+
     var checkout_url = $.environmentVar(
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com'
     );
 
-    var app_public = $.environmentVar(38,38,38);
+    var app_public = $.environmentVar('moulie3','moulie3','moulie3');
 
     var config = {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 10, 
+        'products_per_page' : 10,
         'tag': tag,
         'ignore_stock': false,
         'infinite_scroll': true,
         'checkout_url': checkout_url,
         'operator' :'or',
-        'onLoad': function(products) 
+        'onLoad': function(products)
         {
             $(".product-list-loading").hide();
             if(products == "")
@@ -112,7 +112,7 @@ $(document).ready(function()
     por tag ya definido anteriormente.
     */
     //var principal_tag = "";
-    var loading = $('.product-list').html();    
+    var loading = $('.product-list').html();
 
     $(document).on("click", ".subcateg", function(ev){
         ev.preventDefault();
@@ -132,7 +132,7 @@ $(document).ready(function()
         $("#banner_" + tag).css("display", "block");
 
         config.tag = tag;
-        
+
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(".products").append(loading);
@@ -144,7 +144,7 @@ $(document).ready(function()
     $(document).on("click", ".subcategchocolate", function(ev){
         ev.preventDefault();
 
-        $(".img-tag").addClass("hidden");        
+        $(".img-tag").addClass("hidden");
 
         if ($(this).attr('tag') === 'chocolates' ){
             $("#img-" + $(this).attr('tag')).removeClass("hidden");
@@ -160,7 +160,7 @@ $(document).ready(function()
             config.tag = multiple_tag;
             config.operator = "and";
         }
-        
+
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(".products").append(loading);
